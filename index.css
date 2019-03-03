@@ -1,3 +1,72 @@
 body {
-  background-color: red;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  border-color: black;
+  border-width:  2px 10px;
+  border-style: solid;
+}
+
+.face{
+  border: solid #F6AF43 1.5px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: #F7C462;
+  box-shadow: 12px 14px #F6AF43;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.eyes::after,
+.eyes::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+}
+
+.eyes::before {
+  left: 20%;
+}
+
+.eyes::after {
+  right: 20%;
+}
+
+.lips {
+  top: 41px;
+  width: 127px;
+  height: 66px;
+  border-bottom-left-radius: 87%;
+  border-bottom-right-radius: 87%;
+  position: relative;
+  border-bottom: 27px solid black;
+}
+
+.sweat {
+  width: 140px;
+  height: 71px;
+  position: absolute;
+  border-bottom: 14px solid #FDE4C3;
+  top: 32px;
+  left: 24px;
+  border-bottom-left-radius: 87%;
+  border-bottom-right-radius: 87%;
+  transform: rotate(141deg);
 }
